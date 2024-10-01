@@ -7,26 +7,21 @@ permalink: /
 
 ### Welcome!
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
-It also helps us to understand the fundamental principles that govern the behavior of matter and energy, and to explore the limits of our current knowledge.
-Theoretical physics helps us to make progress in a wide range of fields, including cosmology, particle physics, and quantum mechanics, and it has led to many important discoveries and technological innovations.
+Welcome to my personal academic webpage! I am deeply passionate about artificial intelligence and its vast applications. Currently, I am actively applying for Ph.D. programs.
 
-<div class="container">
-<div class="row">
-<center>
-<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" width="100%"/><br/>
-Examples of Feynman diagrams. <br/>
-Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
-</center>
-</div>
-</div>
-<br/>
+### About Me
 
-### About me
+I am **Wenxiao Xiong**, an undergraduate student at the **School of Computer Science**, **Sun Yat-sen University**. My primary research interests lie in **artificial intelligence**, **machine learning**, especially large models, and their applications in various domains such as medical imaging and data analysis.
 
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+I have a strong enthusiasm for research and have been involved in multiple projects to broaden my experience:
+
+- **At Sun Yat-sen University**, I work under the supervision of **Prof. [Xiangyu Meng](https://seit.sysu.edu.cn/teacher/MengXiangyu)**, where I have been engaging in AI-related research projects.
+- **At The Pennsylvania State University (PSU)**, I am an intern in **Prof. [Suhang Wang](https://suhangwang.ist.psu.edu/)'s** laboratory, contributing to projects on trustworthy multi-modal benchmarks for medical large vision language models.
+- **At The University of Virginia (UVa)**, I intern in **Prof. [Sheng Li](https://sheng-li.org/)'s** lab, working on leveraging large language models for SVG flowchart generation.
+
+Feel free to explore my [research projects](/research/) and [publications](/publications/).
+
+------
+
+
+

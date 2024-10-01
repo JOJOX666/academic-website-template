@@ -1,40 +1,36 @@
 # Site settings
-title: Richard Feynman
-email: richard@university.edu
-description: Academic webpage of Dr. Richard Feynman
+title: Wenxiao Xiong
+email: xiongwx6@mail2.sysu.edu.cn
+description: Academic webpage of Wenxiao Xiong
 baseurl: ""
 url: ""
 
-# Google analytics ID: Uncomment and your own, if you like
+# Google analytics ID: Uncomment and add your own, if you like
 # google_analytics: XX
 # google_analytics_4: XXX
 # google_tag_manager: XXX
 
 # Footer info
 affiliation: >
-  Richard Feynman<br/>
-  Professor of Physics<br/>
-  California Institute of Technology
+  Wenxiao Xiong<br/>
+  School of Computer Science and Engineering<br/>
+  Sun Yat-sen University
 
 location: >
-  California Institute of Technology<br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125
+  Sun Yat-sen University<br/>
+  132 Xiaoguwei Rd.<br/>
+  Guangzhou City, China
 
 contact: >
-  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  <a href="mailto:xiongwx6@mail2.sysu.edu.cn" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Wenxiao via email</a><br/>
+  <a href="https://github.com/JOJOX666" target="_blank"><i class="fa fa-github fa-1x"></i> GitHub</a><br/>
+  <a href="https://www.instagram.com/sshot666/" target="_blank"><i class="fa fa-instagram fa-1x"></i> Instagram</a>
 
 # Pages shown in navbar
 nav_pages:
-  - name: about
   - name: publications
-  - name: talks
   - name: research
-  - name: software
-  - name: team
-  - name: teaching
-  - name: blogs
+  - name: allnews
 
 include:
   - .htaccess
@@ -62,8 +58,8 @@ kramdown:
 plugins: ["jekyll/scholar"]
 
 scholar:
-  last_name: Doe
-  first_name: [John]
+  last_name: Xiong
+  first_name: [Wenxiao]
 
   style: citesty
   locale: en

@@ -25,8 +25,8 @@ pre{
 
 <div class="text-justify">{{reference}}</div>
 
-<!-- You can use the below to make your name bold -->
-<!-- {{reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' | replace_first: 'Bryngelson, S.', '<b>Bryngelson, S.</b>' }}</div> -->
+<!-- 您可以使用以下代码将您的名字加粗 -->
+<!-- {{reference | replace_first: 'Wenxiao Xiong', '<b>Wenxiao Xiong</b>' }}</div> -->
 
 {% assign bibtest = false %}
 {% if entry.file %}
@@ -38,26 +38,36 @@ pre{
 {% endfor %}
 {% endif %}
 
+<!-- 显示 PDF 按钮 -->
 {% if bibtest %}
-<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
+<a href="{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
 {% endif %}
 
+<!-- 显示 Preprint 按钮 -->
+{% if entry.url %}
+<a href="{{ entry.url }}" target="_blank"><button class="btn btn-info btm-sm">Preprint</button></a>
+{% endif %}
+
+<!-- 显示 DOI 或 ArXiv 按钮 -->
 {% if entry.doi %}
-{% if entry.type == 'unpublished' %}
-<a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
-{% else %}
-<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
-{% endif %}
+  {% if entry.type == 'unpublished' %}
+    <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ArXiv</button></a>
+  {% else %}
+    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
+  {% endif %}
 {% endif %}
 
+<!-- 显示 BibTeX 按钮 -->
 {% if entry.type == 'unpublished' or entry.type == 'article' or  entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
 <button class="btn btn-danger btm-sm"  onclick="toggleBibtex{{entry.key}}()">BIB</button>
 {% endif %}
 
+<!-- 显示摘要按钮 -->
 {% if entry.abstract %}
 <button class="btn btn-warning btm-sm"  onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
 {% endif %}
 
+<!-- BibTeX 内容 -->
 {% if entry.abstract %}
 <div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
 <pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
@@ -68,9 +78,12 @@ pre{
 </div>
 {% endif %}
 
+<!-- 摘要内容 -->
+{% if entry.abstract %}
 <div id="b{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
 <pre>{{entry.abstract}}</pre>
 </div>
+{% endif %}
 
 <script>
 function toggleBibtex{{entry.key}}(parameter) {
